@@ -1,0 +1,23 @@
+** instalações
+** yarn add express
+** yarn add -D typescript @types/express ts-node-dev
+** npm install eslint@^8.19.0 --save-dev
+** npx eslint --init 
+** npm i -g ts-node-dev     
+** yarn add http-status-codes
+** yarn add -D @types/http-status-codes
+** yarn add dotenv
+** yarn tsc --init      Obs - para criar o tsconfig, usado para transformar type para js para o deploy
+
+
+OBS: comando  yarn tsc    gera o js para o deploy
+     ou seja terminou roda  yarn tsc para gerar os arquivos js
+
+-- criar estrutura base para startar api
+-- criar eslint
+-- criar .editorconfig
+-- adicionar .env e .env example
+-- adicionar tsconfig e configurar nele onde os arquivos js serão jogados 
+   em tsconfig    adicione   "outDir": "./build"  assim os arquivos js serão jogados lá
+   e tb adicionar  "rootDir": "./src",
+   depois teste rodando yarn tsc  e depois node ./build/index.js 
