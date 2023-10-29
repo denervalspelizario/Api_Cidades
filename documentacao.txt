@@ -21,3 +21,5 @@ OBS: comando  yarn tsc    gera o js para o deploy
    em tsconfig    adicione   "outDir": "./build"  assim os arquivos js serão jogados lá
    e tb adicionar  "rootDir": "./src",
    depois teste rodando yarn tsc  e depois node ./build/index.js 
+-- criar 4 pastas controller(controladores), database(configs do bd), 
+   shared(funcoes que podem ser compartilhados, la vai ter os middlewares e services), routes
